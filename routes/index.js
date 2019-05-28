@@ -7,7 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/chris', (req, res, next) => {
-  res.render('chris', {
+  res.render('person', {
+    name: 'Chris Naismith',
     age: 24,
     cityResiding: 'Stayner',
     cityBorn: 'Barrie',
@@ -17,7 +18,8 @@ router.get('/chris', (req, res, next) => {
 });
 
 router.get('/rebecca', (req, res, next) => {
-  res.render('rebecca', {
+  res.render('person', {
+    name: 'Rebecca Naismith',
     age: 27,
     cityResiding: 'Stanyer',
     cityBorn: 'Hanover',
@@ -28,7 +30,8 @@ router.get('/rebecca', (req, res, next) => {
 });
 
 router.get('/andrew', (req, res, next) => {
-  res.render('andrew', {
+  res.render('person', {
+    name: 'Andrew Naismith',
     age: 22,
     cityResiding: 'Barrie',
     cityBorn: 'Barrie',
@@ -39,7 +42,8 @@ router.get('/andrew', (req, res, next) => {
 });
 
 router.get('/dean', (req, res, next) => {
-  res.render('dean', {
+  res.render('person', {
+    name: 'Dean Naismith',
     age: 53,
     cityResiding: 'Barrie',
     cityBorn: 'Barrie',
@@ -50,7 +54,8 @@ router.get('/dean', (req, res, next) => {
 });
 
 router.get('/cindy', (req, res, next) => {
-  res.render('cindy', {
+  res.render('person', {
+    name: 'Cindy Naismith',
     age: 56,
     cityResiding: 'Barrie',
     cityBorn: 'Barrie',

@@ -2,10 +2,12 @@ extends layout
 
 block content
   .container
-    h1 Chris Naismith
+    h1= name
     ul
       li I am #{age} years old
       li I live in #{cityResiding} Ontario
       li I was born in #{cityBorn} Ontario
       li I enjoy #{likes}
       li I dislike #{dislikes}
+      if relation
+        li I am Chris's #{relation}
