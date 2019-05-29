@@ -1,5 +1,17 @@
-a(href="/chris") Chris
-a(href="/rebecca") Rebecca
-a(href="/dean") Dean
-a(href="/cindy") Cindy
-a(href="/andrew") Andrew
+mixin NavItem(name)
+  li.nav-item
+    a.nav-link(href=`/${name.toLowerCase()}`)= name
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='#') Navbar
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      - var names = ['Chris', 'Rebecca', 'Cindy', 'Dean', 'Andrew']
+      for name in names
+        +NavItem(name)
+      //- +NavItem('Rebecca')
+      //- +NavItem('Cindy')
+      //- +NavItem('Dean')
+      //- +NavItem('Andrew')
