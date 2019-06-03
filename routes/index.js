@@ -8,53 +8,63 @@ router.get('/', function(req, res, next) {
 
 const persons = [
   {
-    path: 'chris',
-    name: 'Chris Naismith',
-    age: 24,
-    cityResiding: 'Stayner',
-    cityBorn: 'Barrie',
-    likes: 'playing Rocket League',
-    dislikes: 'loud people on the bus and subway'
+    path: 'luis',
+    name: 'Luis Villafana',
+    age: 30,
+    cityResiding: 'Barrie',
+	countryResiding: 'Canada',
+    cityBorn: 'Toluca',
+	countryBorn: 'Mexico',
+    likes: 'solving math problems',
+    dislikes: 'gimmicks'
   },
   {
-    path: 'rebecca',
-    name: 'Rebecca Naismith',
+    path: 'rose',
+    name: 'Rose Tamez',
+    age: 49,
+    cityResiding: 'Chicago',
+	countryResiding: 'US',
+    cityBorn: 'CDMX',
+	countryBorn: 'Mexico',
+    likes: 'cooking foods',
+    dislikes: 'dirty floors',
+	relation: 'mom'
+  },
+  {
+    path: 'maria',
+    name: 'Maria Villafana',
     age: 27,
-    cityResiding: 'Stanyer',
-    cityBorn: 'Hanover',
-    likes: 'pizza',
-    dislikes: 'doing report cards',
-    relation: 'wife'
+    cityResiding: 'Chicago',
+	countryResiding: 'US',
+    cityBorn: 'CDMX',
+	countryBorn: 'Mexico',
+    likes: 'going to museums',
+    dislikes: 'shallow guys',
+	relation: 'sister'
   },
   {
-    path: 'andrew',
-    name: 'Andrew Naismith',
+    path: 'leo',
+    name: 'Leo Tiscareno',
     age: 22,
-    cityResiding: 'Barrie',
-    cityBorn: 'Barrie',
-    likes: 'using PS4',
-    dislikes: 'vegetables',
-    relation: 'brother'
+    cityResiding: 'Naucalpan',
+	countryResiding: 'Mexico',
+    cityBorn: 'Leon',
+	countryBorn: 'Mexico',
+    likes: 'partying with my friends',
+    dislikes: 'fake ideas',
+	relation: 'brother'
   },
   {
-    path: 'dean',
-    name: 'Dean Naismith',
-    age: 53,
-    cityResiding: 'Barrie',
-    cityBorn: 'Barrie',
-    likes: 'beer',
-    dislikes: 'not beer',
-    relation: 'father'
-  },
-  {
-    path: 'cindy',
-    name: 'Cindy Naismith',
-    age: 56,
-    cityResiding: 'Barrie',
-    cityBorn: 'Barrie',
-    likes: 'the computer',
-    dislikes: 'beer',
-    relation: 'mom'
+    path: 'james',
+    name: 'James Bond',
+    age: 38,
+    cityResiding: 'Edinburgh',
+	countryResiding: 'Scotland',
+    cityBorn: 'Edinburgh',
+	countryBorn: 'Scotland',
+    likes: 'acrobatics',
+    dislikes: 'bad people',
+	relation: 'spirit animal'
   }
 ];
 
